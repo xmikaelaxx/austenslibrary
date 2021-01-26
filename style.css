@@ -47,20 +47,15 @@ a.active{
     color: #ffffff;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0px;
-    text-align: center;
-    width: 100%;
-}
-
-.footerNav {
-    padding-left: 20px;
-}
-
-#browseForm{
+#browseForm {
     position: fixed;
     margin-top: 20px;
+}
+
+#contactForm {
+    position: fixed;
+    margin-top: 20px;
+
 }
 
 #tableBooks {
@@ -70,6 +65,11 @@ a.active{
     
 }
 
+#tableMyBooks {
+    position: fixed;
+    text-align: center;
+}
+
 th,td {
     border: 1px solid black;
     padding: 10px 25px 10px 25px;
@@ -77,4 +77,15 @@ th,td {
 
 .reserveButtonCell {
     border: none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.footerNav {
+    padding-left: 20px;
 }

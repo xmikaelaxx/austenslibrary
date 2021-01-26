@@ -2,6 +2,10 @@
 <?php include ('header.php');?>
 
 <?php
-    echo "My name is Norman Bates!";
+    echo "
+    <h2>About Us!</h2>
+    <img src='austenslibrary/interiorbook.jpeg'/>
+    
+    ";
 ?>
 <?php include ('footer.php');?>
