@@ -7,7 +7,7 @@
         <img id="image" src="/austenslibrary/book.jpeg" width="100%">
         </div>
      </header>
-        <h1 class="title"> Austen's Library</h1>
+        <h1 class="title"> Austen's Library...</h1>
 
 
 <div id="mainMenu">
