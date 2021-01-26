@@ -1,0 +1,80 @@
+* {
+    font-family: Montserrat;
+
+}
+
+.title {
+    color: #000000;
+    position: absolute;
+    top: 50px;
+    left: 2%;
+}
+
+#copyright {
+    font-size: 13px;
+}
+
+#imageHolder{
+    height: 165px;
+    overflow: hidden;
+}
+
+#image {
+    margin-top: -350px;
+}
+
+#mainMenu {
+    position: absolute;
+    top: 59px;
+    right: 2%;
+}
+
+.menuButton {
+    padding-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a.active{
+    padding-left: 20px;
+    color: #ff0000;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.footerNav {
+    padding-left: 20px;
+}
+
+#browseForm{
+    position: fixed;
+    margin-top: 20px;
+}
+
+#tableBooks {
+    position: fixed;
+    margin-top: 60px;
+    text-align: center;
+    
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 10px 25px 10px 25px;
+}
+
+.reserveButtonCell {
+    border: none;
+}
