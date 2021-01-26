@@ -1,8 +1,8 @@
 <?php include ('ext.php');?>
 <?php include ('header.php');?>
-
+<div class="bodyCon">
 <html>
-    <h3>Search and reserve books</h3>
+    <h2>Search and reserve books</h2>
     <div id="browseForm">
     <form action = "<?php $_PHP_SELF ?>" method = "GET">
         Author: <input type = "text" name = "author">
@@ -21,5 +21,5 @@ echo "<table id='tableBooks'>
 <tr><td>Paulo Coelho</td><td>The Alchemist</td><td class='reserveButtonCell'><input type='submit' value='Reserve' /></td></tr>
 </table>"; 
 ?> 
-
+</div>
 <?php include ('footer.php');?>

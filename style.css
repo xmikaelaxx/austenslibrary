@@ -3,11 +3,23 @@
 
 }
 
+.bodyCon {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .title {
     color: #000000;
     position: absolute;
+    font-weight: 300;
     top: 50px;
     left: 2%;
+}
+
+.menuTitle {
+    font-size: 17px;
+    font-weight: 700;
 }
 
 #copyright {
@@ -15,7 +27,7 @@
 }
 
 #imageHolder{
-    height: 165px;
+    height: 158px;
     overflow: hidden;
 }
 
@@ -44,30 +56,39 @@ a:visited {
 
 a.active{
     padding-left: 20px;
-    color: #ffffff;
+    color: #f0f0f0;
 }
 
 #browseForm {
     position: fixed;
     margin-top: 20px;
+    left: 32%;
 }
 
 #contactForm {
     position: fixed;
     margin-top: 20px;
+    left: 37%;
 
+}
+
+#intBook {
+    width: 800px;
+    align-content: center;
 }
 
 #tableBooks {
     position: fixed;
     margin-top: 60px;
     text-align: center;
+    left: 36%;
     
 }
 
 #tableMyBooks {
     position: fixed;
     text-align: center;
+    left: 36%;
 }
 
 th,td {

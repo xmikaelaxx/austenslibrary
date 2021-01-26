@@ -1,6 +1,6 @@
 <?php include ('ext.php');?>
 <?php include ('header.php');?>
-
+<div class="bodyCon">
 <?php
 
 echo "<h2>Your borrowed books</h2>";
@@ -11,5 +11,5 @@ echo "<table id='tableMyBooks'>
 <tr><td>Emma Cline</td><td>The Girls</td><td class='reserveButtonCell'><input type='submit' value='Return' /></td></tr>
 </table>"; 
 ?>
-
+</div>
 <?php include ('footer.php');?>

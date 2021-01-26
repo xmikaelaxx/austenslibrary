@@ -1,6 +1,6 @@
 <?php include ('ext.php');?>
 <?php include ('header.php');?>
-
+<div class="bodyCon">
 <html>
     <h3>Contact us here! </h3>
     <div id="contactForm">
@@ -13,7 +13,7 @@
 
 </html>
 
-
+</div>
 <?php
     
 ?>

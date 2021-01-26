@@ -4,7 +4,7 @@
 <html>
     <header>
         <div id="imageHolder">
-        <img id="image" src="/austenslibrary/book.jpeg" width="100%">
+        <img id="image" src="/austenslibrary/header1.jpeg" width="100%">
         </div>
      </header>
         <h1 class="title"> Austen's Library...</h1>
@@ -12,7 +12,7 @@
 
 <div id="mainMenu">
 <nav>
-    <p>
+    <p class="menuTitle">
         <a class="<?php echo ($current_page == 'index.php' || $current_page == '') ? 'active' : 'menuButton' ?>" 
         href="index.php">Home</a>
         <a class="<?php echo ($current_page == 'about.php' || $current_page == '') ? 'active' : 'menuButton' ?>" 
