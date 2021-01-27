@@ -1,6 +1,7 @@
 <?php include ('ext.php');?>
 <?php include ('header.php');?>
 <div class="bodyCon">
+
 <html>
     <h2>Search and reserve books</h2>
     <div id="browseForm">
@@ -12,7 +13,7 @@
 
 </html>
 <br>
-
+<div id="boxTest2">
 <?php  
 echo "<table id='tableBooks'>
 <th colspan='1'>Author</th><th>Title</th>
@@ -22,6 +23,8 @@ echo "<table id='tableBooks'>
 </table>"; 
 ?> 
 </div>
+</div>
+
 <div>
 <?php include ('footer.php');?>
 </div>

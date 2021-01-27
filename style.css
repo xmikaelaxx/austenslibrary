@@ -27,6 +27,7 @@ html {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
+    padding-top: 20px;
 }
 
 .textBody {
@@ -83,24 +84,26 @@ a.active{
     color: #f0f0f0;
 }
 
+#intBook {
+    width: 800px;
+    align-content: center;
+}
+
 #browseForm {
     position: fixed;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    width: 95%;
 }
 
 #contactForm {
     position: fixed;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: 95%;
 
-}
-
-#intBook {
-    width: 800px;
-    align-content: center;
 }
 
 #tableBooks {
@@ -112,9 +115,24 @@ a.active{
     
 }
 
+#boxTest {
+    margin-left: auto;
+    margin-right: auto;
+    width: 24%;
+
+}
+
+#boxTest2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
 #tableMyBooks {
     position: fixed;
     text-align: center;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
