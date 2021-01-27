@@ -1,7 +1,27 @@
 * {
     font-family: Montserrat;
-
 }
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+
+  }
+
 
 .bodyCon {
     max-width: 1200px;
@@ -9,6 +29,10 @@
     text-align: center;
 }
 
+.textBody {
+    margin: 0 auto;
+    max-width: 700px;
+}
 .title {
     color: #000000;
     position: absolute;
@@ -62,13 +86,15 @@ a.active{
 #browseForm {
     position: fixed;
     margin-top: 20px;
-    left: 32%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #contactForm {
     position: fixed;
     margin-top: 20px;
-    left: 37%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -81,15 +107,18 @@ a.active{
     position: fixed;
     margin-top: 60px;
     text-align: center;
-    left: 36%;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
 #tableMyBooks {
     position: fixed;
     text-align: center;
-    left: 36%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 th,td {
     border: 1px solid black;
@@ -101,10 +130,12 @@ th,td {
 }
 
 .footer {
-    position: fixed;
+    position: absolute;
     bottom: 0px;
     text-align: center;
     width: 100%;
+    margin-top: 35px;
+    background-color: #f5f5f5;
 }
 
 .footerNav {

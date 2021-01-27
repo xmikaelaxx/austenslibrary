@@ -12,4 +12,7 @@ echo "<table id='tableMyBooks'>
 </table>"; 
 ?>
 </div>
+
+<div>
 <?php include ('footer.php');?>
+</div>
