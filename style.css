@@ -24,8 +24,7 @@ html {
 
 
 .bodyCon {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
     padding-top: 20px;
 }
@@ -90,30 +89,33 @@ a.active{
 }
 
 #browseForm {
-    position: fixed;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     width: 95%;
 }
 
 #contactForm {
-    position: fixed;
     margin-top: 20px;
     margin-left: 0 auto;
     margin-right: 0 auto;
-    width: 95%;
+    width: 100%;
 
 }
 
 #tableBooks {
-    position: fixed;
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-left: 15%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+
     
 }
+
+#firstRow {
+    display: none;
+}
+
 
 #boxTest {
     margin-left: auto;
@@ -125,7 +127,8 @@ a.active{
 #boxTest2 {
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 50%;
+    height: 100%;
 
 }
 
@@ -145,6 +148,10 @@ th,td {
 
 .reserveButtonCell {
     border: none;
+}
+
+#emptyFiller {
+    background: blue;
 }
 
 .footer {
