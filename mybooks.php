@@ -7,7 +7,9 @@
 
 <?php
 
-$query="SELECT Books.Available, Books.BookID, Books.Title, Author.FirstName, Author.LastName FROM Books INNER JOIN BookAuthor ON Books.BookID = BookAuthor.BookID INNER JOIN Author ON Author.AuthorID = BookAuthor.AuthorID WHERE Books.Available = '0'";
+$query="SELECT Books.Available, Books.BookID, Books.Title, Author.FirstName, Author.LastName 
+FROM Books INNER JOIN BookAuthor ON Books.BookID = BookAuthor.BookID INNER JOIN 
+Author ON Author.AuthorID = BookAuthor.AuthorID WHERE Books.Available = '0'";
 
 echo "<h2>Your reserved books</h2>";
 $result=mysqli_query($db, $query);
@@ -35,7 +37,7 @@ while ($stmt->fetch()){
         echo "<tr><td>$bookID</td><td>$firstName $lastName </td><td> $title </td>
         <td class='reserveButtonCell'><form action='mybooks.php' method='post'>
         <input type='hidden' name='hidden' value='$bookID'><input type='submit' name='Return' value='Return book'/></form></td></tr>";
-   // }
+    //}
 }
 echo "</table>"; 
 
