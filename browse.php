@@ -20,7 +20,7 @@
 echo "<table id='tableBooks'>";
 echo "<th colspan='1'>ID</th><th>Author</th><th>Title</th>";
 
-$query="SELECT Books.Available, Books.BookID, Books.Title, GROUP_CONCAT(Author.FirstName, ' ', Author.LastName) as authors
+$query="SELECT Books.Available, Books.BookID, Books.Title, GROUP_CONCAT(Author.FirstName, '  ', Author.LastName) as authors
 FROM Books INNER JOIN BookAuthor ON Books.BookID = BookAuthor.BookID 
 INNER JOIN Author ON Author.AuthorID = BookAuthor.AuthorID GROUP BY Books.Title";
 
