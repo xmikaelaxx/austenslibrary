@@ -1,4 +1,5 @@
 <?php include ('ext.php');?>
+<?php include ('config.php');?>
 <?php include ('header.php');?>
 
 <div class="bodyCon">

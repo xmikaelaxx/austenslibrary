@@ -2,6 +2,7 @@
     font-family: Montserrat;
 }
 
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -21,6 +22,7 @@ html {
     min-height: 100%;
 
   }
+
 
 
 .bodyCon {
@@ -165,4 +167,16 @@ th,td {
 
 .footerNav {
     padding-left: 20px;
+}
+
+#loginButton {
+    margin-left: 20px;
+}
+
+.hideAdmin {
+    display: none;
+}
+
+.hideBooks {
+    display: none;
 }

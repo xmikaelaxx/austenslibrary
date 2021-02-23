@@ -8,7 +8,17 @@ $user="root";
 $password="";
 $database="austenlibrary";
 
-session_start();
+if (!isset($_SESSION)) {
+    session_start();
+ }
+
+    if ($_SESSION["buttonText"] != "Logout"){
+        $_SESSION["buttonText"]= "Login";
+        $_SESSION['logPage']="login.php";
+        //echo "sessionstart!!!!!";
+    }
+  
+  
 
 
 ?>
