@@ -40,30 +40,41 @@ function registration()
 {
    
    global $db;    
-   $query="SELECT Username FROM User WHERE Username='" . $_POST['username'] . "';";
+   $query="SELECT Username FROM User WHERE Username = ?";
    $stmt=$db->prepare($query);
+   $stmt->bind_param('s', $_POST['username']);
    $stmt->bind_result($Username);
    $stmt->execute();
-
+    //echo "finns redan namnet: " . $Username;
    $c=0;
    while ($stmt->fetch()){
     $c+=1;
     echo "<p id='unavailableText'>Sorry that username is unavailable, choose another!</p>";
    }
 
-   $stmt->close();
+   //VALUES ('user', '" . $_POST['username'] . "', '" . $_POST['password'] . "', '" . $_POST['fullname'] . "');";
 
    if ($c==0){
-    $query="INSERT INTO User (UserType, Username, pwd, Name) VALUES ('user', '" . $_POST['username'] . "', '" . $_POST['password'] . "', '" . $_POST['fullname'] . "');";
-         if ($db->query($query) === TRUE){
+   
+    $query="INSERT INTO User (UserType, Username, pwd, Name) VALUES (?, ?, ?, ?)";
+    $stmt=$db->prepare($query);
+    $Usertype = "user";
+    $stmt->bind_param('ssss', $Usertype, $_POST['username'], md5($_POST['password']), $_POST['fullname']);
+
+     if ($stmt->execute() === TRUE){
             header("Location:login.php");
         }else{
             echo "Fel: " . $query . "<br>" . $db->error;
      }
+        // if ($db->query($query) === TRUE){
+        //    header("Location:login.php");
+       // }else{
+        //    echo "Fel: " . $query . "<br>" . $db->error;
+     //}
 
    }
    
-
+   $stmt->close();
 
 }
 

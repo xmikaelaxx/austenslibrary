@@ -48,8 +48,8 @@ while ($stmt->fetch()){
     }
 }
 echo "</table>"; 
-echo "du är inloggad som: " . $_SESSION["usertype"];
-echo " knapptext: " . $_SESSION["buttonText"];
+//echo "du är inloggad som: " . $_SESSION["usertype"];
+//echo " knapptext: " . $_SESSION["buttonText"];
 
 if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['Reserve'])){
     reserveBook();
