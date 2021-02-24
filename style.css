@@ -2,6 +2,9 @@
     font-family: Montserrat;
 }
 
+h2 {
+    text-align: center;
+}
 
 html {
     height: 100%;
@@ -23,6 +26,15 @@ html {
 
   }
 
+.loginContainer {
+    text-align: center;
+}
+
+#registrationButton {
+    text-decoration: underline;
+    font-size: 15px;
+    margin-left: 7px;
+}
 
 
 .bodyCon {
@@ -44,7 +56,7 @@ html {
 }
 
 .menuTitle {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -171,6 +183,23 @@ th,td {
 
 #loginButton {
     margin-left: 20px;
+}
+
+#unavailableText {
+    color: red;
+}
+
+#myslides {
+    padding-top: 15px;
+}
+
+#myslides img {
+    display: block;
+    margin: auto;
+    width: 700px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    border: 40px solid #f2f2f2;
 }
 
 .hideAdmin {

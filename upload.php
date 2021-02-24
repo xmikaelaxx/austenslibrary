@@ -1,3 +1,9 @@
+<?php include ('ext.php');?>
+<?php include ('config.php');?>
+<?php include ('connect.php');?>
+<?php include ('header.php');?>
+
+
 <?php
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -47,3 +53,6 @@ if ($uploadOk == 0) {
   }
 }
  ?>
+<div>
+<?php include ('footer.php');?>
+</div>

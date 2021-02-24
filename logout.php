@@ -25,3 +25,7 @@ if ($_SESSION['logoutRefresh'] != "yes") {
 ?>
 
 <h2>You have been logged out</h2> 
+
+<div>
+<?php include ('footer.php');?>
+</div>

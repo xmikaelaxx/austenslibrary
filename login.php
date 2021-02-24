@@ -51,19 +51,24 @@
       </div> 
 
 
-      <div class = "container">
+      <div class = "loginContainer">
       
          <form class = "form-signin" role = "form" 
             action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
             ?>" method = "post">
             <h4 class = "form-signin-heading"><?php echo $msg; ?></h4>
-            <input type = "text" class = "form-control" 
+            <label for="username">Username</label><br><input type = "text" class = "form-control" 
                name = "username" required autofocus></br>
-            <input type = "password" class = "form-control"
-               name = "password" required>
+               <label for="username">Password</label><br><input type = "password" class = "form-control"
+               name = "password" required><br><br>
             <button class = "btn btn-lg btn-primary btn-block" type = "submit" 
                name = "login">Login</button>
+               <a id="registrationButton" href="registration.php">Not a user?</a>
          </form>
          
       </div> 
+
+<div>
+<?php include ('footer.php');?>
+</div>
 

@@ -18,6 +18,8 @@
         href="index.php">Home</a>
         <a class="<?php echo ($current_page == 'about.php' || $current_page == '') ? 'active' : 'menuButton' ?>" 
         href="about.php">About Us</a>
+        <a class="<?php echo ($current_page == 'gallery.php' || $current_page == '') ? 'active' : 'menuButton' ?>" 
+        href="gallery.php">Gallery</a>
         <a class="<?php echo ($current_page == 'browse.php' || $current_page == '') ? 'active' : 'menuButton' ?> 
         <?php echo ($_SESSION['username'] != '') ? 'showBooks' : 'hideBooks' ?>" 
         href="browse.php">Browse</a>
