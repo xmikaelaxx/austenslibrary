@@ -224,7 +224,7 @@ th,td {
 
 button {
     background-color: #ffffff;
-    padding: 3px;
+    padding: 3px 6px 3px 6px;
     border: 1px solid rgb(226, 193, 202);
     border-radius: 7px;
 }

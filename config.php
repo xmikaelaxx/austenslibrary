@@ -26,7 +26,7 @@ if (!isset($_SESSION)) {
         session_destroy();
         header("Location:www.google.com");
     }
-    echo "ip: " . $_SESSION['ip'];
+    //echo "ip: " . $_SESSION['ip'];
 
 
 ?>
