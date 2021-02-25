@@ -3,6 +3,9 @@
 <?php include ('connect.php');?>
 <?php include ('header.php');?>
 
+<html>
+<h2>Gallery</h2>
+</html>
 <?php
 
 $directory = "uploads";    

@@ -36,7 +36,7 @@ while ($stmt->fetch()){
     //if ($bookAvailable == '0') {
         echo "<tr><td>$bookID</td><td>$authors</td><td> $title </td>
         <td class='reserveButtonCell'><form action='mybooks.php' method='post'>
-        <input type='hidden' name='hidden' value='$bookID'><input type='submit' name='Return' value='Return book'/></form></td></tr>";
+        <input type='hidden' name='hidden' value='$bookID'><input class='buttons' type='submit' name='Return' value='Return book'/></form></td></tr>";
     //}
 }
 echo "</table>"; 

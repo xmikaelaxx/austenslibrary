@@ -4,10 +4,10 @@
 <?php include ('header.php');?>
 
 <?php
- echo "<form action='upload.php' method='post' enctype='multipart/form-data'>
- Select image to upload:
- <input type='file' name='fileToUpload' id='fileToUpload'>
- <input type='submit' value='Upload Image' name='submit'>
+ echo "<br><form id='uploadFile' action='upload.php' method='post' enctype='multipart/form-data'>
+ <h2>Select an image to upload:</h2>
+ <input id='theUpload' type='file' name='fileToUpload' id='fileToUpload'><br><br><br>
+ <input class='buttons' type='submit' value='Upload Image' name='submit'>
 </form>";
 
 ?>

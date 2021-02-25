@@ -156,7 +156,7 @@ a.active{
 
 
 th,td {
-    border: 1px solid black;
+    border: 1px solid rgb(226, 193, 202);
     padding: 10px 25px 10px 25px;
 }
 
@@ -196,10 +196,10 @@ th,td {
 #myslides img {
     display: block;
     margin: auto;
-    width: 700px;
-    padding-top: 35px;
+    width: 800px;
+    padding-top: 25px;
     padding-bottom: 15px;
-    border: 40px solid #f2f2f2;
+
 }
 
 .hideAdmin {
@@ -208,4 +208,32 @@ th,td {
 
 .hideBooks {
     display: none;
+}
+
+#uploadFile {
+   text-align: center;
+}
+
+#viewUpload {
+    text-align: center;
+}
+
+#theUpload {
+    margin-left: 10%;
+}
+
+button {
+    background-color: #ffffff;
+    padding: 3px;
+    border: 1px solid rgb(226, 193, 202);
+    border-radius: 7px;
+}
+
+.buttons {
+    background-color: #ffffff;
+    padding: 3px;
+    border: 1px solid rgb(226, 193, 202);
+    border-radius: 7px;
+    box-shadow: 1px 1px #eeeeee;
+    
 }

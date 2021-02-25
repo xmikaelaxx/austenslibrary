@@ -5,16 +5,9 @@
 <div class="bodyCon">
 
 <html>
-    <h2>Search and reserve books</h2>
-    <div id="browseForm">
-    <form action = "<?php $_PHP_SELF ?>" method = "GET">
-        Author: <input type = "text" name = "author">
-        Title: <input type = "text" name = "title">
-        <input type = "submit"/>
-    </div>
-
+    <h2>Reserve books</h2>
+    
 </html>
-<br>
 <div id="boxTest2">
 <?php  
 echo "<table id='tableBooks'>";
@@ -40,11 +33,11 @@ while ($stmt->fetch()){
     if ($bookAvailable == '1') {
         echo "<tr><td>$bookID</td><td>$authors </td><td> $title </td>
         <td class='reserveButtonCell'><form action='browse.php' method='post'>
-        <input type='hidden' name='hidden' value='$bookID'><input type='submit' name='Reserve' value='Reserve'/></form></td></tr>";
+        <input type='hidden' name='hidden' value='$bookID'><input class='buttons' type='submit' name='Reserve' value='Reserve'/></form></td></tr>";
     }else{
         echo "<tr><td>$bookID</td><td>$authors </td><td> $title </td>
         <td class='reserveButtonCell'><form action='browse.php' method='post'>
-        <input type='hidden' name='hidden' value='$bookID'><input type='submit' name='Reserve' value='Unavailable' disabled /></form></td></tr>";
+        <input type='hidden' name='hidden' value='$bookID'><input class='buttons' type='submit' name='Reserve' value='Unavailable' disabled /></form></td></tr>";
     }
 }
 echo "</table>"; 
