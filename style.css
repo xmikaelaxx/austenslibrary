@@ -231,9 +231,25 @@ button {
 
 .buttons {
     background-color: #ffffff;
-    padding: 3px;
+    padding: 4px 7px 4px 7px;
     border: 1px solid rgb(226, 193, 202);
     border-radius: 7px;
     box-shadow: 1px 1px #eeeeee;
     
+}
+
+#newImage {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.apiGalleryDiv img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.apiGalleryDiv {
+    width: 100%;
+    text-align: center;
 }
