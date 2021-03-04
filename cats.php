@@ -6,12 +6,19 @@ echo "<br><form id='catBreed' action='cats.php' method='GET' enctype='text'>
 echo "<form id='catFact' action='cats.php' method='GET' enctype='text'>
  <input class='buttons' type='submit' value='Generate Cat Fact' name='catFact'></form>";
 
-if($_SERVER['REQUEST_METHOD'] == "GET") {
-    if (isset($_GET['catBreed'])){
-        showBreed();
-    }else{
-        showFact();
-    }
+//if($_SERVER['REQUEST_METHOD'] == "GET") {
+   // if (isset($_GET['catBreed'])){
+        //showBreed();
+   // }else{
+      //  showFact();
+  //  }
+//}
+
+if($_SERVER['REQUEST_METHOD'] == "GET" and isset($_GET['catFact'])){
+    showFact();
+}
+if($_SERVER['REQUEST_METHOD'] == "GET" and isset($_GET['catBreed'])){
+    showBreed();
 }
 
 
